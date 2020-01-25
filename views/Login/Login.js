@@ -35,10 +35,11 @@ export class Login extends React.Component {
     componentDidMount() {
         AsyncStorage.getItem('user_data').then((user) => { return JSON.parse(user) }).then((user_data) => {
             if (user_data != null) {
-                this.setState({ 
-                    username: user_data.user_username, 
-                    password: user_data.user_password 
-                });
+                // this.setState({ 
+                //     username: user_data.user_username, 
+                //     password: user_data.user_password 
+                // });
+                this.props.navigation.navigate('Home')
             }
         });
     }
