@@ -99,17 +99,17 @@ export default class News extends React.Component {
         }
 
         return (
-            <Content style={{ backgroundColor: '#010001', }}>
-                <Header style={{ backgroundColor: '#010001' }}>
+            <Content style={{ backgroundColor: '#006080', }}>
+                <Header style={{ backgroundColor: '#006080' }}>
                     <ImageBackground 
                         resizeMode='cover' 
                         source={require('../../images/bghead.png')} 
                         style={{ width: '100%', justifyContent: "center", alignItems: "center" }} 
                     >
-                        <Text style={{ fontFamily: 'Kanit-Regular', fontSize: 18, color: '#f3f3f3' }}>ข่าวสารและกิจกรรม</Text>
+                        <Text style={{ fontFamily: 'Kanit-Regular', fontSize: 25, color: '#99ccff' }}>ข่าวสารและกิจกรรม</Text>
                     </ImageBackground>
                 </Header>
-                <ScrollView>
+                <ScrollView style={{ padding: 15, backgroundColor: '#4d0026' }} >
                     {display_data}
                 </ScrollView>
             </Content>

@@ -98,14 +98,14 @@ export default class Shop extends React.Component {
         } 
 
         return (                
-            <Content style={{ backgroundColor: '#010001', }}>
-                <Header style={{ backgroundColor: '#010001', }}>
+            <Content style={{ backgroundColor: '#006080', }}>
+                <Header style={{ backgroundColor: '#006080', }}>
                     <ImageBackground 
                         resizeMode='cover' 
                         source={require('../../images/bghead.png')} 
                         style={{ width: '100%', justifyContent: "center", alignItems: "center" }} 
                     >
-                        <Text style={[ styles.text_font, { fontSize: 18, }]}>ค้นหาร้านค้า</Text>
+                        <Text style={[ styles.text_font, { fontSize: 28, Color: '#b3d9ff' }]}>ค้นหาร้านค้า</Text>
                     </ImageBackground>
                 </Header>
                 <View style={{ padding: 12, }}>
@@ -123,7 +123,7 @@ export default class Shop extends React.Component {
                     </View>
                 </View>
                 <ScrollView>
-                    <View style={{ padding: 15, }}>
+                    <View style={{ padding: 15, backgroundColor: '#4d0026' }}>
                         {display_data}
                     </View>
                 </ScrollView>
@@ -136,6 +136,6 @@ const styles = StyleSheet.create({
 	text_font: {
 		fontFamily: 'Kanit-Regular',
         fontSize: 15,
-        color: '#f3f3f3',
+        color: '#b3d9ff',
     },
 });
