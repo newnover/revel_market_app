@@ -31,11 +31,11 @@ export class Home extends React.Component {
             display_data = <News navigation={this.props.navigation} />
         }else if(this.state.page == 'Profile') {
             display_data = <Profile navigation={this.props.navigation} />
-        }else if(this.state.page == 'Profile1') {
+        }/*else if(this.state.page == 'Profile1') {
             display_data = <Profile navigation={this.props.navigation} />
         }else if(this.state.page == 'Profile2') {
             display_data = <Profile navigation={this.props.navigation} />
-        }
+        }*/
         else{
             display_data = <Shop navigation={this.props.navigation} />
         }
@@ -74,22 +74,7 @@ export class Home extends React.Component {
                             <Text style={[ styles.text_font, { color: this.state.page == 'Profile' ? '#ffffff' : '#797e86', } ]}>Profile</Text>
                         </TouchableOpacity>
                     </FooterTab>
-                    <FooterTab style={{ backgroundColor: '#010001', justifyContent: "center" }}>
-                        <TouchableOpacity style={{ alignItems: "center", justifyContent: "center", }}
-                            onPress={() => { this.setState({ page: 'Profile1' }) }}
-                        >
-                            <Icon name="account" size={24} style={{ color: this.state.page == 'Profile1' ? '#ffffff' : '#797e86', }}/>
-                            <Text style={[ styles.text_font, { color: this.state.page == 'Profile1' ? '#ffffff' : '#797e86', } ]}>Profile</Text>
-                        </TouchableOpacity>
-                    </FooterTab>
-                    <FooterTab style={{ backgroundColor: '#010001', justifyContent: "center" }}>
-                        <TouchableOpacity style={{ alignItems: "center", justifyContent: "center", }}
-                            onPress={() => { this.setState({ page: 'Profile2' }) }}
-                        >
-                            <Icon name="account" size={24} style={{ color: this.state.page == 'Profile2' ? '#ffffff' : '#797e86', }}/>
-                            <Text style={[ styles.text_font, { color: this.state.page == 'Profile2' ? '#ffffff' : '#797e86', } ]}>Profile</Text>
-                        </TouchableOpacity>
-                    </FooterTab>
+                
                     
                 </Footer>
             </View>
